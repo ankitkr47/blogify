@@ -6,7 +6,8 @@ const cookiePaser = require("cookie-parser");
 require("dotenv").config();
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT;
+console.log(PORT);
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -21,6 +22,7 @@ const blogRoute = require("./routes/blog");
 const {
   checkForAuthenticationCookie,
 } = require("./middlewares/authentication");
+const { log } = require("console");
 
 
 app.set("view engine","ejs");

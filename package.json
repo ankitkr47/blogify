@@ -1,7 +1,6 @@
 {
   "name": "blogify",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
@@ -21,5 +20,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitkr47/blogify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ankitkr47/blogify/issues"
+  },
+  "homepage": "https://github.com/ankitkr47/blogify#readme",
+  "description": ""
 }
